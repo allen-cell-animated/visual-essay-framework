@@ -1,0 +1,30 @@
+.panel {
+    width: 33.33%;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 30;
+}
+
+.solid-background {
+    background: var(--panel-bg-color);
+    overflow: hidden;
+}
+
+.text-container{
+    flex: 1;
+    margin: auto;
+    padding: 1em;
+}
+
+.image-container {
+    flex: 2;
+    margin: auto 2em;
+}
+
+.image-container img {
+    width: 100%;
+}

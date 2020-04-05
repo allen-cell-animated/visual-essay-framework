@@ -1,0 +1,64 @@
+.container {
+    display: inline-block;
+    line-height: unset;
+    margin: 20px;
+}
+
+.checkbox-button-wrapper {
+    composes: inputButtonWrapper from "../../../styles/mixins.css"
+}
+
+.text {
+    composes: inputButtonWrapperSpan from "../../../styles/mixins.css"
+}
+
+.checkbox-button {
+    composes: inputButton from "../../../styles/mixins.css"
+}
+
+.disabled {
+    composes: inputButtonWrapperDisabled from "../../../styles/mixins.css"
+}
+
+.not-answer {
+    composes: inputButtonWrapperNotAnswer from "../../../styles/mixins.css"
+}
+
+.checked {
+    composes: inputButtonWrapperChecked from "../../../styles/mixins.css"
+}
+
+.correct {
+    composes: inputButtonWrapperCorrect from "../../../styles/mixins.css"
+}
+
+.incorrect {
+    composes: inputButtonWrapperIncorrect from "../../../styles/mixins.css"
+}
+
+.right-answer {
+    composes: inputButtonWrapperRightAnswer from "../../../styles/mixins.css"
+}
+
+.container.image-buttons {
+    display: flex;
+}
+
+.image-buttons .checkbox-button-wrapper {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.image-buttons img {
+    height: 100%;
+    width: 100%;
+}
+
+.question-image {
+    height: 200px;
+}
+
+.question-image img {
+    height: 100%;
+}

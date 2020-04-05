@@ -1,0 +1,66 @@
+.panel {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+    perspective: 2px;
+}
+
+.text-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 60;
+    padding: 20px;
+    color: white;
+    background: #00000085;
+    font-size: 36px;
+}
+
+.splash {
+    height: 300vh;
+}
+
+.parallax::after {
+
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-4px) scale(5);
+    /* Force the background image to fill the whole element. */
+    background-size: cover;
+    /* Keep the image from overlapping sibling elements. */
+    z-index: -14;
+}
+
+.drew-berry-atpase::after {
+    background-image: url("/assets/drew_berry_ATP_synthase.png");
+}
+
+.tem::after {
+    background-image: url("/assets/TEM.jpg");
+}
+
+.david-goodsell-mito::after {
+    background-image: url("/assets/david-goodsell-mito.png");
+}
+
+.drew-berry-atpase::after {
+    background-image: url("/assets/drew_berry_ATP_synthase.png");
+}

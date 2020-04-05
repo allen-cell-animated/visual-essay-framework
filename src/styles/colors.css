@@ -1,0 +1,25 @@
+:root {
+    --dark-purple: #3b3649;
+    --white: #ffffff;
+    --light-purple: #bab5c9;
+    --dark-gray: #3b3649;
+
+    /* typography */
+    --text-color: var(--dark-gray);
+
+    /* buttons */
+    --disabled-button-bg-color: #7a7688;
+    --disabled-button-text-color: var(--light-purple);
+    --active-button-bg-color: var(--dark-purple);
+    --active-button-text-color: var(--light-purple);
+    /* checkbox and radio buttons */
+    --input-button-bg-color: #f2f2f2;
+    --input-button-border-color-selected: var(--dark-gray);
+    --input-button-border-color-correct: #2cc102;
+    --input-button-border-color-incorrect: #d0011a;
+
+    /* panels */
+    --section-bg-color: var(--dark-purple);
+    --section-text-color: var(--white);
+    --panel-bg-color: var(--light-purple);
+}

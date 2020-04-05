@@ -1,0 +1,25 @@
+.container {
+    min-width: 410px;
+    display: flex;
+    flex-flow: column;
+}
+
+.submit {
+    -webkit-appearance: none;
+    border: none;
+    width: 140px;
+    height: 44px;
+    text-transform: uppercase;
+    background-color: var(--active-button-bg-color);
+    font-size: 18px;
+    text-align: center;
+    color: var(--active-button-text-color);
+    margin: 6px;
+    cursor: pointer;
+}
+
+.submit.disabled {
+    background-color: var(--disabled-button-bg-color);
+    color: var(--disabled-button-text-color);
+    cursor: not-allowed;
+}

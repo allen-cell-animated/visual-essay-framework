@@ -1,0 +1,5 @@
+.container {
+    min-width: 410px;
+    display: flex;
+    flex-flow: column;
+}

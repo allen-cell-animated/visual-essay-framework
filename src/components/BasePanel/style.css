@@ -1,0 +1,25 @@
+.panel {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    z-index: 30;
+}
+
+.solid-background {
+    background: var(--panel-bg-color);
+    overflow: hidden;
+}
+
+.text-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 60;
+    padding: 20px;
+}

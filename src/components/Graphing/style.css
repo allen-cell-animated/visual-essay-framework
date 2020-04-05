@@ -1,0 +1,12 @@
+.container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+.container :global(.plot-container) {
+    padding-bottom: 20px!important;
+    background: rgba(255, 255, 255, 0.7);
+}

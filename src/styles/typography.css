@@ -1,0 +1,12 @@
+:root {
+    --typeface: 'Overpass', sans-serif;
+}
+
+:global(.section-title) {
+    font-family: 'Overpass-Light';
+    font-weight: 800;
+}
+
+:gobal(.section-subtitle) {
+    font-family: 'Overpass-ExtraBold';
+}

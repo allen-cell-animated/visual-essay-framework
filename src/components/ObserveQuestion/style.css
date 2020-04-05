@@ -1,0 +1,9 @@
+.container {
+    min-width: 410px;
+    display: flex;
+    flex-flow: column;
+}
+
+.hypothesis{
+    color: var(--disabled-button-bg-color);
+}

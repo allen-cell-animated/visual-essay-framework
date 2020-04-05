@@ -1,0 +1,63 @@
+.container{
+
+    display: inline-block;
+    line-height: unset;
+}
+
+.radio-button-wrapper {
+    composes: inputButtonWrapper from "../../../styles/mixins.css"
+}
+
+.text {
+    composes: inputButtonWrapperSpan from "../../../styles/mixins.css"
+}
+
+.radio-button {
+    composes: inputButton from "../../../styles/mixins.css"
+
+}
+.disabled {
+    composes: inputButtonWrapperDisabled from "../../../styles/mixins.css"
+}
+.not-answer {
+    composes: inputButtonWrapperNotAnswer from "../../../styles/mixins.css"
+}
+.checked {
+    composes: inputButtonWrapperChecked from "../../../styles/mixins.css"
+}
+
+.correct {
+    composes: inputButtonWrapperCorrect from "../../../styles/mixins.css"
+}
+
+.incorrect {
+    composes: inputButtonWrapperIncorrect from "../../../styles/mixins.css"
+}
+
+.right-answer {
+    composes: inputButtonWrapperRightAnswer from "../../../styles/mixins.css"
+}
+
+.container.image-buttons {
+    display: flex;
+    align-items: center;
+
+}
+.image-buttons .radio-button-wrapper {
+    height: 20vh;
+    width: 200px;
+    overflow: hidden;
+}
+
+.image-buttons .radio-button-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.question-image {
+    height: 20vh;
+}
+
+.question-image img {
+    height: 100%;
+}

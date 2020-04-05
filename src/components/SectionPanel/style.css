@@ -1,0 +1,38 @@
+.panel {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+    background: var(--section-bg-color);
+    color: white;
+    z-index: 30;
+}
+
+.text-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 60;
+    padding: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text-container .title {
+    flex: 3;
+    margin-left: 15%;
+}
+
+.text-container .title h4{
+    text-transform: uppercase;
+}
+
+.text-container .learning-goals {
+    flex: 1;
+    font-size: 18px;
+    font-weight: 200;
+}
