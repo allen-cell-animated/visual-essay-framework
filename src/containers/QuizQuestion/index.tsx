@@ -38,6 +38,8 @@ export interface QuizQuestionProps {
 interface QuizQuestionState {
     value: string | string[];
     submitButtonActive: boolean;
+    numberAttempts: number;
+    firstAnswer: string | string[];
 }
 
 class QuizQuestion extends React.Component<QuizQuestionProps, QuizQuestionState> {
@@ -50,11 +52,15 @@ class QuizQuestion extends React.Component<QuizQuestionProps, QuizQuestionState>
         this.state = {
             value: "",
             submitButtonActive: false,
+            numberAttempts: 0,
+            firstAnswer: "",
         };
     }
 
     handleChange(value: string | string[]) {
-        this.setState({ value });
+        const attempts = this.state.numberAttempts + 1;
+        const firstAnswer = this.state.numberAttempts === 0 ? value : this.state.firstAnswer;
+        this.setState({ value, numberAttempts: attempts, firstAnswer });
     }
 
     toggleSubmitButtonActive(submitButtonActive: boolean) {
@@ -126,6 +132,7 @@ class QuizQuestion extends React.Component<QuizQuestionProps, QuizQuestionState>
         saveAnswer(name, {
             userSelection: this.state.value,
             correct: answerCheck(this.state.value),
+            numberAttempts: this.state.numberAttempts,
             answer,
             answerText:
                 typeof this.state.value === "string"
