@@ -2,8 +2,6 @@ import * as React from "react";
 
 import SectionPanel from "../../components/SectionPanel";
 import StickyVisual from "../../components/StickyVisual";
-import SimulationWindow from "../../containers/SimulationWindow";
-import BasePanel from "../../components/BasePanel";
 
 export default [
     <SectionPanel

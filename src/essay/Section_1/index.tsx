@@ -2,7 +2,6 @@ import * as React from "react";
 
 import SectionPanel from "../../components/SectionPanel";
 import ParallaxPanel from "../../components/ParallaxPanel";
-import HalfPanel from "../../components/HalfPanel";
 
 export default [
     <SectionPanel
