@@ -53,7 +53,6 @@ class CheckBoxGroup extends React.Component<CheckBoxGroupProps, CheckBoxGroupSta
         if (showAnswer) {
             return classNames(styles.checkboxButtonWrapper, {
                 [styles.checked]: checked,
-                [styles.disabled]: answered,
                 [styles.correct]: answered && isOneOfTheAnswers && checked,
                 [styles.incorrect]: answered && !isOneOfTheAnswers && checked,
                 [styles.notAnswer]: answered && !isOneOfTheAnswers && !checked,
@@ -62,7 +61,6 @@ class CheckBoxGroup extends React.Component<CheckBoxGroupProps, CheckBoxGroupSta
         }
         return classNames(styles.checkboxButtonWrapper, {
             [styles.checked]: checked,
-            [styles.disabled]: answered,
             [styles.notAnswer]: answered && !checked,
         });
     }

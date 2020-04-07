@@ -59,7 +59,6 @@ class RadioGroup extends React.Component<RadioGroupProps, RadioGroupState> {
         if (showAnswer) {
             return classNames(styles.radioButtonWrapper, {
                 [styles.checked]: checked,
-                [styles.disabled]: answered,
                 [styles.correct]: answered && answerCheck(value) && checked,
                 [styles.incorrect]: answered && !answerCheck(value) && checked,
                 [styles.notAnswer]: answered && !answerCheck(value) && !checked,
@@ -68,7 +67,6 @@ class RadioGroup extends React.Component<RadioGroupProps, RadioGroupState> {
         }
         return classNames(styles.radioButtonWrapper, {
             [styles.checked]: checked,
-            [styles.disabled]: answered,
             [styles.notAnswer]: answered && !checked,
         });
     }
